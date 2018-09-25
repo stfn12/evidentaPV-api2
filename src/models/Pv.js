@@ -1,4 +1,5 @@
 import mongoose from 'mongoose';
+//import uniqueValidator from 'mongoose-unique-validator';
 
 const schema = new mongoose.Schema({
   serie: { type:String, required: true, uppercase: true, createIndex: true },
@@ -11,5 +12,7 @@ const schema = new mongoose.Schema({
   suma: { type:Number, required: true },
   mod_intocmire: { type:String }
 }, {timestamps: true});
+
+//schema.plugin(uniqueValidator, {message: 'Serie si numar existente'});
 
 export default mongoose.model('Pv', schema);
