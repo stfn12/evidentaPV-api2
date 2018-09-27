@@ -1,5 +1,5 @@
 import express from  'express';
-import Pv from '../models/Pv';
+import Chitanta from '../models/Chitanta';
 import authenticate from "../middleware/authenticate";
 import parseErrors from '../utils/parseError';
 
@@ -7,21 +7,21 @@ const router = express.Router();
 router.use(authenticate);
 
 router.get("/search", async (req, res) => {
-  await Pv.find().exec()
-    .then(procese => res.json({procese}));
-    //.then(procese=> console.log(procese))
+  await Chitanta.find().exec()
+    .then(chitante => res.json({chitante}));
+  //.then(procese=> console.log(procese))
 });
 
 router.post('/', async (req, res) => {
-  await Pv.create(req.body.proces)
-    .then(proces => res.json({proces}))
+  await Chitanta.create(req.body.chitanta)
+    .then(chitanta => res.json({chitanta}))
     .catch(err=> res.status(400).json({errors:parseErrors(err.errors)}))
 });
 
 router.put('/:id', async (req,res) => {
-  await Pv.findOneAndUpdate({_id: req.body.proces._id}, req.body.proces)
-    .then(() => Pv.findOne({_id: req.body.proces._id})
-      .then(proces => res.json({proces})))
+  await Chitanta.findOneAndUpdate({_id: req.body.chitanta._id}, req.body.chitanta)
+    .then(() => Chitanta.findOne({_id: req.body.chitanta._id})
+      .then(chitanta => res.json({chitanta})))
     .catch(err=> res.status(400).json({errors:parseErrors(err.errors)}))
 });
 

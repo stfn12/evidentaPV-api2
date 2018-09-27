@@ -3,7 +3,11 @@
     <words>
       <w>adresa</w>
       <w>bcrypt</w>
+      <w>chitanta</w>
+      <w>chitante</w>
       <w>contravenient</w>
+      <w>controlor</w>
+      <w>controlori</w>
       <w>dotenv</w>
       <w>eroare</w>
       <w>evidenta</w>
@@ -14,6 +18,7 @@
       <w>marca</w>
       <w>mongo</w>
       <w>numar</w>
+      <w>nume</w>
       <w>proces</w>
       <w>procese</w>
       <w>secretkey</w>
