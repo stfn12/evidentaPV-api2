@@ -1,11 +1,11 @@
 import mongoose from 'mongoose';
-//import uniqueValidator from 'mongoose-unique-validator';
+import uniqueValidator from 'mongoose-unique-validator';
 
 const schema = new mongoose.Schema({
-  marca: {type: Number, required: true, createIndex: true  },
+  marca: {type: Number, required: true, createIndex: true, unique: true },
   nume: { type:String, required: true, createIndex: true }
 }, {timestamps: true});
 
-//schema.plugin(uniqueValidator, {message: 'Serie si numar existente'});
+schema.plugin(uniqueValidator, {message: 'Marca existenta'});
 
 export default mongoose.model('Controlor', schema);

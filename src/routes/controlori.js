@@ -8,8 +8,7 @@ router.use(authenticate);
 
 router.get("/search", async (req, res) => {
   await Controlor.find().exec()
-    .then(controlori => res.json({controlori}));
-  //.then(procese=> console.log(procese))
+    .then(controlori => res.json({controlori}))
 });
 
 router.post('/', async (req, res) => {
