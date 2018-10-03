@@ -7,7 +7,7 @@ const router = express.Router();
 router.use(authenticate);
 
 router.get("/search", async (req, res) => {
-  await Controlor.find().exec()
+  await Controlor.find().sort({marca:1}).exec()
     .then(controlori => res.json({controlori}))
 });
 

@@ -7,7 +7,7 @@ const router = express.Router();
 router.use(authenticate);
 
 router.get("/search", async (req, res) => {
-  await Chitanta.find().exec()
+  await Chitanta.find().sort({numar: 1}).exec()
     .then(chitante => res.json({chitante}));
   //.then(procese=> console.log(procese))
 });

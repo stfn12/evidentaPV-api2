@@ -7,9 +7,8 @@ const router = express.Router();
 router.use(authenticate);
 
 router.get("/search", async (req, res) => {
-  await Pv.find().exec()
+  await Pv.find().sort({data_intocmire: -1}).exec()
     .then(procese => res.json({procese}));
-    //.then(procese=> console.log(procese))
 });
 
 router.post('/', async (req, res) => {
