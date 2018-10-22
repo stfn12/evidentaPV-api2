@@ -12,15 +12,9 @@ router.get("/search", async (req, res) => {
 });
 
 router.get("/searchDate", async (req, res) => {
-  if(req.query.from === null || req.query.to ===null){
-    await Pv.find().sort({ data_intocmire: -1 }).exec()
-      .then(procese => res.json({ procese }));
-  }
-  else {
     await Pv.find({ data_intocmire: { $gte: req.query.from, $lte: req.query.to } })
       .sort({ data_intocmire: -1 }).exec()
       .then(procese => res.json({ procese }));
-  }
 });
 
 router.post('/', async (req, res) => {

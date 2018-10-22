@@ -25,6 +25,12 @@ router.put('/:id', async (req,res) => {
     .catch(err=> res.status(400).json({errors:parseErrors(err.errors)}))
 });
 
+router.delete('/:id', async(req, res) =>{
+  await Chitanta.remove({_id: req.body.chitanta._id})
+    .then(chitanta => res.json({chitanta}))
+    .catch(err=> res.status(400).json({errors:parseErrors(err.errors)}))
+});
+
 /*router.post('/', (req,res) =>{
   const {serie, numar, marca, data_intocmire, contravenient, adresa, localitate, suma, mod_intocmire} = req.body.proces;
   const proces = new Pv({serie, numar, marca, data_intocmire, contravenient, adresa, localitate, suma, mod_intocmire});

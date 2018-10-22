@@ -10,7 +10,7 @@ const schema = new mongoose.Schema({
   cnp: {type: Number, required: true, createIndex: true  },
   adresa: { type:String },
   localitate: { type:String, required: true },
-  suma: { type:Number, required: true },
+  suma: { type:Number },
   mod_intocmire: { type:String }
 }, {timestamps: true});
 
