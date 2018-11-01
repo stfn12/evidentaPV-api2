@@ -2,6 +2,7 @@ import express from  'express';
 import Chitanta from '../models/Chitanta';
 import authenticate from "../middleware/authenticate";
 import parseErrors from '../utils/parseError';
+import Pv from "../models/Pv";
 
 const router = express.Router();
 router.use(authenticate);
@@ -9,7 +10,13 @@ router.use(authenticate);
 router.get("/search", async (req, res) => {
   await Chitanta.find().sort({numar: 1}).exec()
     .then(chitante => res.json({chitante}));
-  //.then(procese=> console.log(procese))
+});
+
+router.get("/searchDate", async (req, res) => {
+  await Chitanta.find({ data: { $gte: req.query.from, $lte: req.query.to } })
+    .sort({ data: -1 }).exec()
+    .then(chitante => res.json({ chitante }))
+    .catch(err=> res.status(400).json({errors:parseErrors(err.errors)}));
 });
 
 router.post('/', async (req, res) => {

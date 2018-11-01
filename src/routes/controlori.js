@@ -2,7 +2,6 @@ import express from  'express';
 import Controlor from '../models/Controlor';
 import authenticate from "../middleware/authenticate";
 import parseErrors from '../utils/parseError';
-import Chitanta from "../models/Chitanta";
 
 const router = express.Router();
 router.use(authenticate);
