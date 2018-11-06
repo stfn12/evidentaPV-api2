@@ -7,11 +7,11 @@ const router = express.Router();
 router.use(authenticate);
 
 router.get("/search", async (req, res) => {
-  if(req.query.controlor !==  null)
-    await Pv.find({ marca: req.query.controlor }).sort({ data_intocmire: -1 }).exec()
+  if(req.query.controlor ===  undefined || req.query.controlor ===  null)
+    await Pv.find().sort({ data_intocmire: -1 }).exec()
       .then(procese => res.json({ procese }));
   else
-    await Pv.find().sort({ data_intocmire: -1 }).exec()
+    await Pv.find({ marca: req.query.controlor }).sort({ data_intocmire: -1 }).exec()
       .then(procese => res.json({ procese }));
 });
 

@@ -15,8 +15,8 @@
     <session id="736285066">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="26" />
-          <entry key="project.open.time.0" value="4" />
+          <entry key="project.closed" value="28" />
+          <entry key="project.open.time.0" value="5" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.13" value="3" />
@@ -25,14 +25,15 @@
           <entry key="project.open.time.16" value="4" />
           <entry key="project.open.time.17" value="3" />
           <entry key="project.open.time.18" value="3" />
-          <entry key="project.open.time.19" value="2" />
+          <entry key="project.open.time.19" value="3" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.21" value="2" />
           <entry key="project.open.time.23" value="2" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="31" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -41,7 +42,7 @@
           <entry key="env" value="4" />
           <entry key="eslintrc" value="1" />
           <entry key="html" value="2" />
-          <entry key="js" value="80" />
+          <entry key="js" value="84" />
           <entry key="json" value="3" />
         </counts>
       </usages-collector>
@@ -50,7 +51,7 @@
           <entry key=".env file" value="3" />
           <entry key="HTML" value="2" />
           <entry key="JSON" value="5" />
-          <entry key="JavaScript" value="80" />
+          <entry key="JavaScript" value="84" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
@@ -59,7 +60,7 @@
           <entry key="babelrc" value="12" />
           <entry key="env" value="45" />
           <entry key="html" value="29" />
-          <entry key="js" value="5740" />
+          <entry key="js" value="5797" />
           <entry key="json" value="70" />
         </counts>
       </usages-collector>
@@ -67,7 +68,7 @@
         <counts>
           <entry key="HTML" value="29" />
           <entry key="JSON" value="82" />
-          <entry key="JavaScript" value="5740" />
+          <entry key="JavaScript" value="5797" />
           <entry key="PLAIN_TEXT" value="45" />
         </counts>
       </usages-collector>
@@ -78,20 +79,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/routes/procese.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/routes/chitante.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="506">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -134,11 +123,11 @@
         <option value="$PROJECT_DIR$/src/models/Chitante.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/routes/controlori.js" />
-        <option value="$PROJECT_DIR$/src/routes/procese.js" />
         <option value="$PROJECT_DIR$/src/models/Pv.js" />
         <option value="$PROJECT_DIR$/src/models/Chitanta.js" />
         <option value="$PROJECT_DIR$/src/models/Controlor.js" />
         <option value="$PROJECT_DIR$/src/routes/chitante.js" />
+        <option value="$PROJECT_DIR$/src/routes/procese.js" />
       </list>
     </option>
   </component>
@@ -156,7 +145,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -279,11 +268,14 @@
       <workItem from="1540966587049" duration="4378000" />
       <workItem from="1541053346374" duration="1609000" />
       <workItem from="1541082275467" duration="2845000" />
+      <workItem from="1541144044267" duration="606000" />
+      <workItem from="1541416210734" duration="1774000" />
+      <workItem from="1541488901042" duration="2334000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104971000" />
+    <option name="totallyTimeSpent" value="109685000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -295,7 +287,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12381454" />
@@ -303,7 +295,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32968238" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.31236443" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31236443" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -386,16 +378,6 @@
         <state relative-caret-position="-1104" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/routes/controlori.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
@@ -431,10 +413,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes/controlori.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/routes/chitante.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="368">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
@@ -443,8 +435,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/routes/procese.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="506">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
